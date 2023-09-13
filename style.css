@@ -28,6 +28,7 @@ body {
 
 .theme {
   margin-left: 100px;
+  font-weight: lighter;
   text-transform: uppercase;
 }
 
@@ -77,7 +78,7 @@ main {
   height: auto;
 
   width: 80%;
-  max-width: 1000px;
+  max-width: 1100px;
   margin: 1rem auto;
 }
 
@@ -139,11 +140,11 @@ td[colspan="2"] {
 
 
 @media (max-width: 500px) {
-  main {
-    width: 40%;
+  /* main {
+    width: 50%;
     margin: 0 auto;
     padding: 2rem;
-  }
+  } */
 
   .display {
     width: 95vw;
@@ -155,7 +156,6 @@ td[colspan="2"] {
     width: 20vw;
     margin: 0 auto;
     border-radius: 1rem;
-    /* border-spacing: .1rem; */
   }
 
   .btn-number {
