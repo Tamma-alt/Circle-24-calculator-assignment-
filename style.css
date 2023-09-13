@@ -90,6 +90,20 @@ table {
   overflow: hidden;
 }
 
+.btn-number, .btn-operator{
+    margin-top: 1em;
+    margin-left: 1em;
+    background-color: #E8E5DA;
+    padding: 10px 30px;
+}
+#clear{
+    margin-top: 1em;
+    margin-left: 1em;
+    background-color: #657296;
+    padding: 10px 15px 10px 15px;
+    text-align: center;
+
+
 button {
   border-radius: 0.5em;
   text-align: center;
@@ -170,5 +184,49 @@ td[colspan="2"] {
   .btn-operator {
     width: 40%;
   }
+  
+/* Theme - 3 */
+:root{
+    --bg-1: hsl(268, 75%, 9%);
+    --bg-2: hsl(268, 70%, 12%);
+    --theme-3-text: hsl(52, 100%, 62%);
+    --key-bg: hsl(268, 47%, 21%);
+    --key-shadow: hsl(290, 70%, 36%);
+    --del-bg: hsl(281, 89%, 26%);
+    --del-shadow: hsl(285, 91%, 52%);
+    --equal-bg: hsl(176, 100%, 44%);
+    --equal-shadow: hsl(177, 92%, 70%);
+}
+
+.theme-3-body{
+    color: var(--theme-3-text);
+    background-color: var(--bg-1);
+}
+
+.theme-3-display,
+.theme-3-input,
+.theme-3-toggle,
+.theme-3-buttons{
+    background-color: var(--bg-2);
+}
+
+.theme-3-btn-number,
+.theme-3-btn-operator{
+    color: var(--theme-3-text);
+    box-shadow: 0 5px 0 0 var(--key-shadow);
+    background-color: var(--key-bg);
+}
+
+.theme-3-reset,
+.theme-3-clear{
+    color: #fff;
+    box-shadow: 0 5px 0 0 var(--del-shadow);
+    background-color: var(--del-bg);
+}
+
+.theme-3-equal{
+    color: hsl(198, 20%, 13%);
+    box-shadow: 0 5px 0 0 var(--equal-shadow);
+    background-color: var(--equal-bg);
 
 }
