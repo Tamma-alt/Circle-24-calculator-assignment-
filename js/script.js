@@ -29,7 +29,7 @@ function appendNumber(number) {
   updateDisplay();
 }
 
-/* Add the listeners to the numbers */
+/* Add the listeners to the numbers buttons */
 numbers.forEach((button) => {
   button.addEventListener("click", () => {
     appendNumber(button.innerText);
