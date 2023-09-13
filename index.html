@@ -1,69 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calcualator</title>
-    <link rel="stylesheet" href="style.css">
-
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <main>
-
-    <div class="container">
-      <div class="calculator">
-        <section class="number">
+      <div class="container">
+        <div class="calculator">
+          <section class="number">
             <p>1 &nbsp; 2 &nbsp; 3</p>
-        </section>
-        <section class="section-theme">
+          </section>
+          <section class="section-theme">
             <div class="cal-theme">
-                <h4>Calc</h4>
-                <h4 class="theme">Theme</h4>
+              <h4>Calc</h4>
+              <h4 class="theme">Theme</h4>
             </div>
             <div class="toggle">
-                    <div class="toggle-btn"></div>
+              <div class="toggle-btn"></div>
             </div>
-        </section>
-        
-        </section>
-        <section class="display">
+          </section>
+
+          <section class="display">
             <div id="input"></div>
-        </section>
-        <section class="buttons">
+          </section>
+          <section class="buttons">
             <table>
-                <tr>
-                    <td><button class="btn-number" id="7">7</button></td>
-                    <td><button class="btn-number" id="8">8</button></td>
-                    <td><button class="btn-number" id="9">9</button></td>
-                    <td><button id="clear">DEL</button></td>
-                </tr>
-                <tr>
-                    <td><button class="btn-number" id="4">4</button></td>
-                    <td><button class="btn-number" id="5">5</button></td>
-                    <td><button class="btn-number" id="6">6</button></td>
-                    <td><button class="btn-operator" id="+">+</button></td>
-                </tr>
-                <tr>
-                    <td><button class="btn-number" id="1">1</button></td>
-                    <td><button class="btn-number" id="2">2</button></td>
-                    <td><button class="btn-number" id="3">3</button></td>
-                    <td><button class="btn-operator" id="-">-</button></td>
-                </tr>
-                <tr>
-                    <td><button class="btn-operator operator-num" id=".">.</button></td>
-                    <td><button class="btn-number operator-num" id="0">0</button></td>
-                    <td><button class="btn-operator operator-num" id="/">/</button></td>
-                    <td><button class="btn-operator operator-num" id="*">&times;</button></td>
-                </tr>
-                <tr class="rest">
-                    <td colspan="2">RESET</td>
-                    <td colspan="2" id="equal">=</button></td>
-                </tr>       
+              <tr>
+                <td>
+                  <button class="btn-number" id="7">7</button>
+                </td>
+                <td>
+                  <button class="btn-number" id="8">8</button>
+                </td>
+                <td>
+                  <button class="btn-number" id="9">9</button>
+                </td>
+                <td><button id="clear">DEL</button></td>
+              </tr>
+
+              <tr>
+                <td>
+                  <button class="btn-number" id="4">4</button>
+                </td>
+                <td>
+                  <button class="btn-number" id="5">5</button>
+                </td>
+                <td>
+                  <button class="btn-number" id="6">6</button>
+                </td>
+                <td>
+                  <button class="btn-operator" id="+">+</button>
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <button class="btn-number" id="1">1</button>
+                </td>
+                <td>
+                  <button class="btn-number" id="2">2</button>
+                </td>
+                <td>
+                  <button class="btn-number" id="3">3</button>
+                </td>
+                <td>
+                  <button class="btn-operator" id="-">-</button>
+                </td>
+              </tr>
+
+              <tr>
+                <td>
+                  <button class="btn-operator operator-num" id=".">.</button>
+                </td>
+                <td>
+                  <button class="btn-number operator-num" id="0">0</button>
+                </td>
+                <td>
+                  <button class="btn-operator operator-num" id="/">/</button>
+                </td>
+                <td>
+                  <button class="btn-operator operator-num" id="*">*</button>
+                </td>
+              </tr>
+
+              <tr class="rest">
+                <td colspan="2">RESET</td>
+                <td colspan="2" id="equal">=</td>
+              </tr>
             </table>
-        </section>
+          </section>
+        </div>
       </div>
-    </div>
     </main>
     <script src="js/script.js"></script>
-</body>
+  </body>
 </html>
