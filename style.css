@@ -11,8 +11,8 @@ body {
 .number p {
   color: #ffff;
   font-family: sans-serif;
-  margin-left: 310px;
-  margin-bottom: 5px;
+  margin-left: 20.1rem;
+  margin-bottom: .3rem;
 }
 
 .section-theme {
@@ -21,8 +21,9 @@ body {
 
 .cal-theme {
   display: flex;
-  margin-bottom: 1em;
-  gap: 110px;
+  justify-content: space-around;
+  margin-bottom: 1rem;
+  gap: 7rem;
 }
 
 .theme {
@@ -83,8 +84,9 @@ main {
 table {
   background-color: #181f33;
   width: 80%;
-  padding: .5rem 1rem .5rem 0rem;
+  padding: .5rem 0rem .5rem 0rem;
   border-radius: 0.5em;
+  overflow: hidden;
 }
 
 button {
@@ -138,9 +140,22 @@ td[colspan="2"] {
 
 @media (max-width: 500px) {
   main {
-    width: 50%;
+    width: 40%;
     margin: 0 auto;
     padding: 2rem;
+  }
+
+  .display {
+    width: 95vw;
+    margin: 1rem auto;
+    color: white;
+  }
+
+  table {
+    width: 20vw;
+    margin: 0 auto;
+    border-radius: 1rem;
+    /* border-spacing: .1rem; */
   }
 
   .btn-number {
@@ -151,23 +166,9 @@ td[colspan="2"] {
     border-style: none;
   }
 
-  table {
-    width: 50vw;
-    margin: 0 auto;
-    border-radius: 1rem;
-    /* border-spacing: .1rem; */
-
-  }
-
   .btn-number,
   .btn-operator {
     width: 40%;
-  }
-
-  .display {
-    width: 70vh;
-    margin: 1.5rem auto;
-    color: white;
   }
 
 }
