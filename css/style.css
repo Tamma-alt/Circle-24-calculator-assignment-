@@ -115,8 +115,8 @@ button {
 
 .btn-number,
 .btn-operator {
-  /* margin-top: 1em;
-  margin-left: 1em; */
+  margin-top: 1em;
+  margin-left: 1em;
   background-color: #e8e5da;
   padding: 10px 30px;
   width: 80%;
@@ -153,35 +153,53 @@ td[colspan="2"] {
 }
 
 @media (max-width: 500px) {
-  /* main {
+  main {
     width: 50%;
     margin: 0 auto;
     padding: 2rem;
-  } */
+  }
+
+  .cal-theme {
+    justify-content: space-between;
+    gap: 4rem;
+  }
+
+  .number p {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 19.9rem;
+    font-size: .7rem;
+  }
+
+  .toggle {
+    background-color: #181f33;
+    padding: 0.5px 12px;
+    border-radius: 1em;
+    margin-bottom: 0.9rem;
+    margin-left: 0.6rem;
+  }
+  
+  .toggle-btn {
+    width: 90%;
+  }
 
   .display {
-    width: 95vw;
+    width: 93%;
     margin: 1rem auto;
-    color: white;
   }
 
   table {
-    width: 20vw;
+    width: 60%;
+    padding: 1rem;
     margin: 0 auto;
     border-radius: 1rem;
   }
 
-  .btn-number {
-    border-radius: 0.5em;
-    text-align: center;
-    font-size: 1.3rem;
-    font-weight: 600;
-    border-style: none;
-  }
 
   .btn-number,
   .btn-operator {
-    width: 40%;
+    padding: .5rem 1rem;
+    margin-left: 1rem;
   }
 
   /* Theme - 3 */
