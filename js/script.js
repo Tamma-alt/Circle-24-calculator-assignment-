@@ -54,6 +54,8 @@ for (let i = 0; i < operators.length; i++) {
           calculation = num1 - num2;
         } else if (currentOperator === "*") {
           calculation = num1 * num2;
+        } else if (currentOperator === "/") {
+          calculation = num1 / num2;
         }
         previousOperand = calculation;
       }
@@ -78,6 +80,12 @@ equals.addEventListener("click", function () {
       calculation = num1 - num2;
     } else if (currentOperator === "*") {
       calculation = num1 * num2;
+    } else if (currentOperator === "/") {
+        if (num2 === 0) {
+          input.innerHTML = "Infinity";
+          return;
+        }
+      calculation = num1 / num2;
     }
   }
   input.innerHTML = calculation;
