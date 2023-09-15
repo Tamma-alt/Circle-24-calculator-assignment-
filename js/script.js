@@ -29,7 +29,7 @@ function appendNumber(number) {
   updateDisplay();
 }
 
-/* Add the listeners to the numbers */
+/* Add the listeners to the numbers buttons */
 numbers.forEach((button) => {
   button.addEventListener("click", () => {
     appendNumber(button.innerText);
@@ -54,8 +54,6 @@ for (let i = 0; i < operators.length; i++) {
           calculation = num1 - num2;
         } else if (currentOperator === "*") {
           calculation = num1 * num2;
-        } else if (currentOperator === "/") {
-          calculation = num1 / num2;
         }
         previousOperand = calculation;
       }
@@ -80,8 +78,6 @@ equals.addEventListener("click", function () {
       calculation = num1 - num2;
     } else if (currentOperator === "*") {
       calculation = num1 * num2;
-    } else if (currentOperator === "/") {
-      calculation = num1 / num2;
     }
   }
   input.innerHTML = calculation;
