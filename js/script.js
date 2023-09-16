@@ -5,10 +5,10 @@ let currentOperator = null;
 let numbers = document.querySelectorAll(".btn-number");
 let input = document.getElementById("input");
 let operators = document.getElementsByClassName("btn-operator");
-let equals = document.getElementById("equal");
+let equals = document.querySelector(".equal");
 let reset = document.querySelector(".rest td");
 let mainReset = document.querySelector(".reset-btn");
-let clear = document.getElementById("clear");
+let clear = document.querySelector(".clear");
 /* Store the current input */
 let currentInput = "";
 /* Store the current operator */
@@ -128,3 +128,41 @@ mainReset.addEventListener("click", function () {
   currentOperator = "";
   previousOperand = "";
 });
+
+
+// theme switcher
+
+let toggler = document.querySelector('.toggle-btn');
+
+toggler.addEventListener('click', () => {
+  let numbers = document.querySelectorAll('.btn-number');
+  let operators = document.querySelectorAll('.btn-operator');
+  let body = document.body;
+  let display =  document.querySelector('.display');
+  let toggle_bg = document.querySelector('.toggle'); 
+  let buttons = document.querySelector('.buttons');
+  let table = document.querySelector(".table")
+  let headings = document.querySelectorAll(".heading")
+
+
+  body.classList.toggle("theme-2-body")
+  display.classList.toggle("theme-2-display")
+  input.classList.toggle("theme-2-input")
+  toggle_bg.classList.toggle("theme-2-toggle")
+  toggler.classList.toggle("theme-2-toggle-btn")
+  buttons.classList.toggle("theme-2-buttons")
+  mainReset.classList.toggle("theme-2-reset-btn")
+  table.classList.toggle("theme-2-table")
+  clear.classList.toggle("theme-2-clear")
+  equals.classList.toggle("theme-2-equal")
+
+  headings.forEach((heading) => {
+    heading.classList.toggle("theme-2-h4")
+  })
+  operators.forEach((operator) => {
+    operator.classList.toggle("theme-2-btn-operator")
+  })
+  numbers.forEach((number) => {
+    number.classList.toggle("theme-2-btn-number")
+  })
+})
