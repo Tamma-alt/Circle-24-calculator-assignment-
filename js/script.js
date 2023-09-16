@@ -7,6 +7,7 @@ let input = document.getElementById("input");
 let operators = document.getElementsByClassName("btn-operator");
 let equals = document.getElementById("equal");
 let reset = document.querySelector(".rest td");
+let mainReset = document.querySelector(".reset-btn");
 let clear = document.getElementById("clear");
 /* Store the current input */
 let currentInput = "";
@@ -54,6 +55,8 @@ for (let i = 0; i < operators.length; i++) {
           calculation = num1 - num2;
         } else if (currentOperator === "*") {
           calculation = num1 * num2;
+        } else if (currentOperator === "/") {
+          calculation = num1 / num2;
         }
         previousOperand = calculation;
       }
@@ -78,12 +81,23 @@ equals.addEventListener("click", function () {
       calculation = num1 - num2;
     } else if (currentOperator === "*") {
       calculation = num1 * num2;
+    } else if (currentOperator === "/") {
+        if (num2 === 0) {
+          input.innerHTML = "Infinity";
+          return;
+        }
+      calculation = num1 / num2;
     }
+    input.innerHTML = calculation;
+    currentOperand = "" + calculation;
+    currentOperator = "";
+    previousOperand = "";
   }
-  input.innerHTML = calculation;
-  currentOperand = "" + calculation;
-  currentOperator = "";
-  previousOperand = "";
+  // input.innerHTML = calculation;
+  // currentOperand = "" + calculation;
+  // currentOperator = "";
+  // previousOperand = "";
+  calculation = "";
 
   updateDisplay();
 });
@@ -104,3 +118,13 @@ clear.addEventListener("click", function () {
 });
 
 updateDisplay();
+
+/* function for the reset button */
+
+mainReset.addEventListener("click", function () {
+  input.textContent = "";
+  input.innerHTML = "";
+  currentOperand = "";
+  currentOperator = "";
+  previousOperand = "";
+});

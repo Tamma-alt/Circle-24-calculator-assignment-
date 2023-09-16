@@ -6,7 +6,6 @@
 
 body {
   background-color: #3b4565;
-  
 }
 
 .number p {
@@ -89,20 +88,15 @@ table {
   padding: 2em;
   border-radius: 0.5em;
   overflow: hidden;
+  border-spacing: 1rem;
+  border-collapse: separate;
 }
 
 .btn-number,
 .btn-operator {
-  margin-top: 1em;
-  margin-left: 1em;
+  width: 100%;
   background-color: #e8e5da;
   padding: 10px 30px;
-}
-#clear {
-  margin-top: 1em;
-  margin-left: 1em;
-  background-color: #657296;
-  padding: 10px 15px 10px 15px;
 }
 
 button {
@@ -113,18 +107,8 @@ button {
   border-style: none;
 }
 
-.btn-number,
-.btn-operator {
-  margin-top: 1em;
-  margin-left: 1em;
-  background-color: #e8e5da;
-  padding: 10px 30px;
-  width: 80%;
-}
-
 #clear {
-  margin-top: 1em;
-  margin-left: 1em;
+  padding: 10px 15px 10px 15px;
   background-color: #657296;
 }
 
@@ -144,12 +128,7 @@ td[colspan="2"] {
 }
 
 #equal {
-  margin-right: 1em;
   background-color: #e90c0c;
-}
-
-.reset {
-  margin-right: 2em;
 }
 
 @media (max-width: 500px) {
@@ -168,7 +147,7 @@ td[colspan="2"] {
     display: flex;
     justify-content: space-between;
     margin-left: 19.9rem;
-    font-size: .7rem;
+    font-size: 0.7rem;
   }
 
   .toggle {
@@ -178,7 +157,7 @@ td[colspan="2"] {
     margin-bottom: 0.9rem;
     margin-left: 0.6rem;
   }
-  
+
   .toggle-btn {
     width: 90%;
   }
@@ -189,61 +168,54 @@ td[colspan="2"] {
   }
 
   table {
-    width: 60%;
+    width: 50%;
     padding: 1rem;
     margin: 0 auto;
     border-radius: 1rem;
+    border-spacing: .7rem 1.5rem;
   }
+}
+/* Theme - 3 */
+:root {
+  --bg-1: hsl(268, 75%, 9%);
+  --bg-2: hsl(268, 70%, 12%);
+  --theme-3-text: hsl(52, 100%, 62%);
+  --key-bg: hsl(268, 47%, 21%);
+  --key-shadow: hsl(290, 70%, 36%);
+  --del-bg: hsl(281, 89%, 26%);
+  --del-shadow: hsl(285, 91%, 52%);
+  --equal-bg: hsl(176, 100%, 44%);
+  --equal-shadow: hsl(177, 92%, 70%);
+}
 
+.theme-3-body {
+  color: var(--theme-3-text);
+  background-color: var(--bg-1);
+}
 
-  .btn-number,
-  .btn-operator {
-    padding: .5rem 1rem;
-    margin-left: 1rem;
-  }
+.theme-3-display,
+.theme-3-input,
+.theme-3-toggle,
+.theme-3-buttons {
+  background-color: var(--bg-2);
+}
 
-  /* Theme - 3 */
-  :root {
-    --bg-1: hsl(268, 75%, 9%);
-    --bg-2: hsl(268, 70%, 12%);
-    --theme-3-text: hsl(52, 100%, 62%);
-    --key-bg: hsl(268, 47%, 21%);
-    --key-shadow: hsl(290, 70%, 36%);
-    --del-bg: hsl(281, 89%, 26%);
-    --del-shadow: hsl(285, 91%, 52%);
-    --equal-bg: hsl(176, 100%, 44%);
-    --equal-shadow: hsl(177, 92%, 70%);
-  }
+.theme-3-btn-number,
+.theme-3-btn-operator {
+  color: var(--theme-3-text);
+  box-shadow: 0 5px 0 0 var(--key-shadow);
+  background-color: var(--key-bg);
+}
 
-  .theme-3-body {
-    color: var(--theme-3-text);
-    background-color: var(--bg-1);
-  }
+.theme-3-reset-btn,
+.theme-3-clear {
+  color: #fff;
+  box-shadow: 0 5px 0 0 var(--del-shadow);
+  background-color: var(--del-bg);
+}
 
-  .theme-3-display,
-  .theme-3-input,
-  .theme-3-toggle,
-  .theme-3-buttons {
-    background-color: var(--bg-2);
-  }
-
-  .theme-3-btn-number,
-  .theme-3-btn-operator {
-    color: var(--theme-3-text);
-    box-shadow: 0 5px 0 0 var(--key-shadow);
-    background-color: var(--key-bg);
-  }
-
-  .theme-3-reset,
-  .theme-3-clear {
-    color: #fff;
-    box-shadow: 0 5px 0 0 var(--del-shadow);
-    background-color: var(--del-bg);
-  }
-
-  .theme-3-equal {
-    color: hsl(198, 20%, 13%);
-    box-shadow: 0 5px 0 0 var(--equal-shadow);
-    background-color: var(--equal-bg);
-  }
+.theme-3-equal {
+  color: hsl(198, 20%, 13%);
+  box-shadow: 0 5px 0 0 var(--equal-shadow);
+  background-color: var(--equal-bg);
 }
