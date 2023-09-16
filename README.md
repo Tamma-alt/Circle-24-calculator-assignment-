@@ -44,7 +44,7 @@ Some work has to be done on the error that occures when trying to work with floa
 - [Omah](https://github.com/omaah2)
 - [Tayo](https://github.com/jaycee-cpu93)
 - [Itemearau ThankGod](https://github.com/Tamma-alt)
-- [Mishael]https://github.com/mishael-codes
+- [Mishael](https://github.com/mishael-codes)
 - [Somto](https://github.com/somzynation)
 - [Onadokun Oluwafemi](https://github.com/o1-spec)
 - [Dada Adedapo](https://github.com/Ddreyy)
