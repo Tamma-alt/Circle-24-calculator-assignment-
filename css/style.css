@@ -175,6 +175,41 @@ td[colspan="2"] {
     border-spacing: .7rem 1.5rem;
   }
 }
+
+/*Theme - 2*/
+.theme-2-body {
+  color: hsl(221, 14%, 31%);
+  background-color: rgb(237, 237, 237);
+}
+
+.theme-2-display,
+.theme-2-input,
+.theme-2-toggle,
+.theme-2-buttons {
+  background-color: rgb(245, 245, 245);
+  color: #fff;
+}
+
+.theme-2-btn-number,
+.theme-2-btn-operator {
+  color: hsl(221, 14%, 31%);
+  background-color: rgb(237, 237, 237);
+  box-shadow: 0 5px 0 0 hsl(35, 11%, 61%);
+}
+
+.theme-2-reset-btn,
+.theme-2-clear {
+  background-color: hsl(185, 42%, 37%);
+  color: #fff;
+  box-shadow: 0 5px 0 0 hsl(185, 58%, 25%);
+}
+
+.theme-2-equal {
+  color: hsl(30, 25%, 89%);
+  box-shadow: 0 5px 0 0 hsl(25, 99%, 27%);
+  background-color:hsl(25, 98%, 40%);
+}
+
 /* Theme - 3 */
 :root {
   --bg-1: hsl(268, 75%, 9%);
